@@ -17,7 +17,7 @@
 - [ ] 部署或调用一个智能合约
 
 ### 综合任务
-- [ ] 画出 Agent-Wallet-Contract 架构图
+- [x] 画出 Agent-Wallet-Contract 架构图 → [experiments/agent-wallet-workflow.md](experiments/agent-wallet-workflow.md)
 - [ ] 提交所有 Week 1 任务证明
 
 ### 综合进阶
