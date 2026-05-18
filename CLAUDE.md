@@ -35,3 +35,103 @@ AI x Web3 School Cohort 0 个人学习仓库。用于学习日志、任务证明
 - 涉及 commit、push 等操作需人工确认
 - 每日笔记和任务笔记按模板格式填写
 - Handbook 反馈要包含页面链接、问题描述、建议改法
+
+## 两仓库职责区分
+
+学员的学习足迹分布在**两个 GitHub 仓库**，不要弄混：
+
+| 仓库 | 学员权限 | 用途 | 调性 |
+|---|---|---|---|
+| `huahuahua1223/ai-web3-learning`（**本仓库**） | 可读写 | PoW 工作区：`daily/`、`tasks/`、`experiments/`、`handbook-feedback/`、`hackathon/` | 工程详尽（commit hash、API 调用、bug 修复细节都写）|
+| `intensivecolearning/ai-web3-school` | **只读** | 残酷共学打卡同步，`notes/huahuahua1223.md` 单文件按日期分段 | 第一人称口语反思、单一主题、~800 字 |
+
+残酷共学仓库**只能通过残酷共学网页编辑器（WCB 首页「去残酷共学打卡」按钮）更新**，不要尝试 git push 该仓库。`notes/huahuahua1223.md` 的每段必须用 `<!-- DAILY_CHECKIN_YYYY-MM-DD_START -->...END` 注释包裹，平台据此解析。**水笔记会判未学习**，单周缺卡 ≥3 次淘汰。
+
+## 每日打卡 SOP
+
+当学员让 Claude Code 帮写打卡，按这 5 步：
+
+1. **跑 `scripts/wcb-checkin-prep.sh`** — 拿到当日 WCB 进度 + 残酷共学最新 3 天笔记 + 本地 git log（输出落 `/tmp/wcb-checkin-YYYY-MM-DD.md`）
+2. **读 `/tmp/wcb-checkin-YYYY-MM-DD.md`** 这一份原料文件，再加上最近 1-3 天的 `daily/`
+3. **起草本地详尽版 `daily/YYYY-MM-DD.md`** — 工程细节、commit 链路、明日计划，对齐 `templates/daily-note.md`
+4. **起草残酷共学反思版**（~800 字）— 第一人称、围绕单一主题、避免技术文档腔；用 `<!-- DAILY_CHECKIN_YYYY-MM-DD_START -->...END` 包裹；以代码块形式给学员，方便整段复制
+5. 学员确认后：本地版按 conventional commits 英文 commit；残酷共学版**学员手动**去残酷共学编辑器替换，不要尝试自动提交
+
+规则：
+- 不主动提交，commit/push 前等学员确认（沿用「工作规范」）
+- 不动 `intensivecolearning/ai-web3-school` 仓库
+- 残酷共学版必须有自己的反思，不要堆技术日志
+
+## WCB Agent API 速查
+
+平台叫 Web3 Career Build（WCB），是 AI x Web3 School 的母平台，提供 tRPC 风格的 Agent API。
+
+- **Base**：`https://web3career.build`
+- **主入口**：`POST /api/agent/call`，body `{"procedure":"...","input":{...}}`
+- **完整文档**：<https://web3career.build/llms.txt>（curl 可直拉）
+- **Catalog**：`GET /api/agent/catalog`
+- **认证**：从 macOS Keychain 现取 → `security find-generic-password -a "$USER" -s "WCB_AGENT_SECRET_API_KEY" -w` → `Authorization: Bearer <key>`
+- **学员的 programId**（AI x Web3 School）：`cmnx791nl008sru0167pzp4ki`
+- **本地命令模板**：
+
+  ```bash
+  KEY=$(security find-generic-password -a "$USER" -s "WCB_AGENT_SECRET_API_KEY" -w 2>/dev/null)
+  curl -s -X POST https://web3career.build/api/agent/call \
+    -H "Authorization: Bearer $KEY" \
+    -H "Content-Type: application/json" \
+    -d '{"procedure":"users.getProfile","input":{}}'
+  ```
+
+学员常用 procedure：
+
+| procedure | 类型 | 用途 |
+|---|---|---|
+| `users.getProfile` | query | 验证 key + 取自己基本信息 |
+| `program.getById {idOrSlug:"AI-Web3-School"}` | query | 从返回的 `metadata.taskI18n.en` 拿全部 38 个 taskId |
+| `tasks.myTaskHistory {taskId}` | query | 查某 task 提交记录（有提交则 result 非空数组）|
+| `tasks.myTotalPoints` | query | 自己已得总分 |
+| `tasks.submitEvidence {taskId, proof}` | **mutation** | 提交任务证明，**写入前必须展示 proof 全文 + 二次确认** |
+
+已知坑：
+- `tasks.listForLearner` 不传 `trackId` 返回 `result: []`；`tracks.listForProgram` 对 agent 关闭（FORBIDDEN）。绕路：先 `program.getById` 拿全部 taskId，再循环 `tasks.myTaskHistory`。
+- Claude Code 的 Bash 工具开新 shell 不会 source `~/.zshrc`，所以即使 `.zshrc` 里 `export` 了 key 也读不到。**统一从 keychain 现取**。
+- `proof` 字段实际接受字符串（URL 或长 Markdown）。提交综合任务时 proof 可放 GitHub README 链接或 raw markdown URL。
+
+## 残酷共学笔记格式约束
+
+文件：`intensivecolearning/ai-web3-school/notes/huahuahua1223.md`（学员只读，平台同步）。
+
+格式骨架：
+
+```markdown
+---
+timezone: UTC+8
+---
+
+# huahua
+
+**GitHub ID:** huahuahua1223
+**Telegram:** @huahuahua1223
+
+## Self-introduction
+AI x Web3 School
+
+## Notes
+
+<!-- Content_START -->
+# 2026-05-20
+<!-- DAILY_CHECKIN_2026-05-20_START -->
+（今天的内容，~800 字、第一人称、单一主题）
+<!-- DAILY_CHECKIN_2026-05-20_END -->
+
+# 2026-05-19
+<!-- DAILY_CHECKIN_2026-05-19_START -->
+...
+<!-- DAILY_CHECKIN_2026-05-19_END -->
+
+<!-- Content_END -->
+```
+
+新一天的内容必须放在新的 `_START/_END` 注释对里，且**追加在文件顶部最近一天的上方**（按时间倒序）。`<!-- Content_START -->` 与 `<!-- Content_END -->` 是文件级 marker，不要动。
+
+调性参照：避免技术文档腔，写自己的认知更新与边界感。每天围绕**一个核心主题**展开（比如「不同 Agent 的定位差别」「Agent 第一次替我跟平台对话」），不要罗列工程清单。
