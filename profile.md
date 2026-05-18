@@ -1,28 +1,28 @@
-# Learner Profile
+# 学员画像
 
-## Background
+## 背景
 
-- **AI**: Familiar with AI tools (ChatGPT, Claude, etc.), no hands-on Agent development experience
-- **Web3**: Familiar with wallets, DeFi, smart contracts, and dApp ecosystem
-- **Programming**: Full-stack developer, can build independently
-- **Language**: Chinese (preferred)
+- **AI**：熟悉 AI 工具（ChatGPT、Claude 等），无 Agent 开发实战经验
+- **Web3**：熟悉钱包、DeFi、智能合约和 DApp 生态
+- **编程**：全栈开发，能独立完成项目
+- **语言**：中文
 
-## Goals
+## 目标方向
 
-- **Primary**: AI Agent development + Web3 integration
-- **Secondary**: Hackathon projects (Agentic Commerce, Dev Tooling)
+- **主线**：AI Agent 开发 + Web3 集成
+- **副线**：Hackathon 项目（Agentic Commerce、Dev Tooling）
 
-## Time Commitment
+## 时间投入
 
-- 3+ hours per day
-- Self-paced, no daily reminders needed
+- 每天 3 小时以上
+- 自主节奏，不需要打卡提醒
 
-## Focus Areas
+## 重点学习方向
 
-| Priority | Topic | Why |
-|----------|-------|-----|
-| High | Agent, MCP, Prompt Engineering | Core Agent dev skills I'm missing |
-| High | Agent Workflow, Web3 Tool Use, Agent Wallet | AI x Web3 bridge — the real intersection |
-| Medium | Frameworks, Vibe Coding, Context | Expanding the Agent dev toolchain |
-| Medium | Account Abstraction, Dev Stack | Filling Web3 dev-side gaps |
-| Explore | Dev Tooling, Agentic Commerce tracks | Hackathon direction scouting |
+| 优先级 | 主题 | 原因 |
+|--------|------|------|
+| 高 | Agent、MCP、Prompt Engineering | 补齐 Agent 开发核心技能 |
+| 高 | Agent Workflow、Web3 Tool Use、Agent Wallet | AI x Web3 交叉核心 |
+| 中 | Frameworks、Vibe Coding、Context | 扩展 Agent 开发工具链 |
+| 中 | Account Abstraction、Dev Stack | 补齐 Web3 开发侧 |
+| 探索 | Dev Tooling、Agentic Commerce | Hackathon 方向参考 |

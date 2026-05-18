@@ -1,124 +1,124 @@
-# Learning Plan
+# 学习计划
 
-## Week 1 Tasks (from WCB)
+## Week 1 任务清单（来自 WCB）
 
-### Prerequisites
-- [x] Create GitHub learning repo
-- [x] Configure Learning Agent
-- [ ] Watch live sessions / replays (5.22, 5.23)
+### 前置准备
+- [x] 创建 GitHub 学习仓库
+- [x] 配置 Learning Agent
+- [ ] 观看线上活动直播 / 回放（5.22、5.23）
 
-### AI Track
-- [ ] Organize AI fundamentals (LLM, Prompt, Context, RAG, Agent)
-- [ ] Complete Learning Agent setup
-- [ ] Build an interactive AI Agent
+### AI 方向
+- [ ] 整理 AI 基础概念（LLM、Prompt、Context、RAG、Agent）
+- [ ] 完成 Learning Agent 配置
+- [ ] 完成一个 AI 可交互 Agent
 
-### Web3 Track
-- [ ] Complete a testnet transaction
-- [ ] Deploy or call a smart contract
+### Web3 方向
+- [ ] 完成一笔测试网交易
+- [ ] 部署或调用一个智能合约
 
-### Combined
-- [ ] Draw Agent-Wallet-Contract architecture diagram
-- [ ] Submit all Week 1 task proofs
+### 综合任务
+- [ ] 画出 Agent-Wallet-Contract 架构图
+- [ ] 提交所有 Week 1 任务证明
 
-### Advanced
-- [ ] Design a restricted Web3 assistant or mini workflow
-
----
-
-## Personalized Learning Path
-
-Based on my profile (AI tools familiar, no Agent dev experience, Web3 familiar, full-stack developer):
-
-### Phase 1: Agent Development Foundations (Days 1-3)
-
-Read Handbook chapters and do hands-on experiments:
-
-1. **AI > Agent** - https://aiweb3.school/zh/handbook/ai/agent/
-   - Understand tool calling, multi-step execution, ReAct pattern
-2. **AI > Prompt** - https://aiweb3.school/zh/handbook/ai/prompt/
-   - System prompts, structured output, guardrails
-3. **AI > MCP** - https://aiweb3.school/zh/handbook/ai/mcp/
-   - Model Context Protocol — how models connect to tools
-4. **Experiment**: Build a simple interactive Agent (Week 1 AI task)
-
-### Phase 2: AI x Web3 Bridge (Days 3-5)
-
-The core intersection:
-
-5. **Bridge > Web3 Tool Use** - https://aiweb3.school/zh/handbook/bridge/web3-tool-use/
-   - How Agents call RPC, wallets, and contracts
-6. **Bridge > Agent Workflow** - https://aiweb3.school/zh/handbook/bridge/agent-workflow/
-   - What to automate vs. human-in-the-loop
-7. **Bridge > Agent Wallet** - https://aiweb3.school/zh/handbook/bridge/agent-wallet/
-   - Agent permissions, limits, and revocation
-8. **Experiment**: Draw Agent-Wallet-Contract architecture diagram
-
-### Phase 3: Web3 Dev Practice (Days 5-6)
-
-Quick hands-on (already familiar with Web3 concepts):
-
-9. **Web3 > Account Abstraction** - https://aiweb3.school/zh/handbook/web3/account-abstraction/
-   - Smart Accounts for Agent permissions
-10. **Web3 > Dev Stack** - https://aiweb3.school/zh/handbook/web3/dev-stack/
-    - Development tools and frameworks
-11. **Experiment**: Deploy a contract + do a testnet transaction
-
-### Phase 4: Integration & Advanced (Day 7)
-
-12. Design a restricted Web3 assistant or mini workflow
-13. Submit all Week 1 proofs
-14. Scout Hackathon tracks: Dev Tooling, Agentic Commerce
+### 综合进阶
+- [ ] 设计一个受限 Web3 助手或小 workflow
 
 ---
 
-## Handbook Reading Tracker
+## 个性化学习路径
 
-### AI Fundamentals
-- [ ] LLM
-- [ ] Prompt
-- [ ] Context
-- [ ] RAG
-- [ ] Agent
-- [ ] Frameworks
-- [ ] MCP
-- [ ] Evaluation
-- [ ] Inference
-- [ ] Fine-tuning
+基于个人画像（AI 工具熟悉但无 Agent 开发经验，Web3 已熟悉，全栈开发）：
+
+### 第一阶段：Agent 开发基础（第 1-3 天）
+
+阅读 Handbook 章节 + 动手实验：
+
+1. **AI > Agent** — https://aiweb3.school/zh/handbook/ai/agent/
+   - 工具调用、多步执行、ReAct 模式
+2. **AI > Prompt** — https://aiweb3.school/zh/handbook/ai/prompt/
+   - 系统提示词、结构化输出、安全边界
+3. **AI > MCP** — https://aiweb3.school/zh/handbook/ai/mcp/
+   - 模型上下文协议——模型如何连接工具
+4. **实验**：构建一个简单的可交互 Agent（Week 1 AI 任务）
+
+### 第二阶段：AI x Web3 桥接（第 3-5 天）
+
+核心交叉内容：
+
+5. **Bridge > Web3 Tool Use** — https://aiweb3.school/zh/handbook/bridge/web3-tool-use/
+   - Agent 如何调用 RPC、钱包、合约工具
+6. **Bridge > Agent Workflow** — https://aiweb3.school/zh/handbook/bridge/agent-workflow/
+   - 哪些步骤适合自动化，哪些必须 human-in-the-loop
+7. **Bridge > Agent Wallet** — https://aiweb3.school/zh/handbook/bridge/agent-wallet/
+   - Agent 权限、额度限制和撤销机制
+8. **实验**：画出 Agent-Wallet-Contract 架构图
+
+### 第三阶段：Web3 开发实践（第 5-6 天）
+
+快速动手（已熟悉 Web3 概念）：
+
+9. **Web3 > Account Abstraction** — https://aiweb3.school/zh/handbook/web3/account-abstraction/
+   - Smart Account 与 Agent 权限表达
+10. **Web3 > Dev Stack** — https://aiweb3.school/zh/handbook/web3/dev-stack/
+    - 开发工具与框架
+11. **实验**：部署合约 + 完成一笔测试网交易
+
+### 第四阶段：整合与进阶（第 7 天）
+
+12. 设计一个受限 Web3 助手或小 workflow
+13. 提交所有 Week 1 任务证明
+14. 探索 Hackathon 方向：Dev Tooling、Agentic Commerce
+
+---
+
+## Handbook 阅读进度
+
+### AI 基础
+- [ ] LLM（大语言模型）
+- [ ] Prompt（提示词工程）
+- [ ] Context（上下文管理）
+- [ ] RAG（检索增强生成）
+- [ ] Agent（智能体）
+- [ ] Frameworks（框架）
+- [ ] MCP（模型上下文协议）
+- [ ] Evaluation（评估）
+- [ ] Inference（推理）
+- [ ] Fine-tuning（微调）
 - [ ] Vibe Coding
 
-### Web3 Fundamentals
-- [ ] Network
-- [ ] Cryptography
-- [ ] Wallet
-- [ ] Smart Contract
-- [ ] Account Abstraction
-- [ ] DeFi
-- [ ] Oracle
-- [ ] Indexing
-- [ ] Security
-- [ ] Dev Stack
+### Web3 基础
+- [ ] Network（网络与共识）
+- [ ] Cryptography（密码学）
+- [ ] Wallet（钱包）
+- [ ] Smart Contract（智能合约）
+- [ ] Account Abstraction（账户抽象）
+- [ ] DeFi（去中心化金融）
+- [ ] Oracle（预言机）
+- [ ] Indexing（索引）
+- [ ] Security（安全）
+- [ ] Dev Stack（开发工具栈）
 
-### AI x Web3 Bridge
-- [ ] Chain-aware Context
-- [ ] Web3 Tool Use
-- [ ] Agent Workflow
-- [ ] Agent Wallet
-- [ ] Machine Payment
-- [ ] Settlement & Escrow
-- [ ] Agent Identity
-- [ ] Agent Trust & Reputation
-- [ ] Verifiable AI
-- [ ] AI Security
-- [ ] AI Privacy
-- [ ] Governance AI
-- [ ] AI Sovereignty
-- [ ] Decentralized AI
-- [ ] AI Oracle
+### AI x Web3 桥接
+- [ ] Chain-aware Context（链感知上下文）
+- [ ] Web3 Tool Use（Web3 工具调用）
+- [ ] Agent Workflow（Agent 工作流）
+- [ ] Agent Wallet（Agent 钱包）
+- [ ] Machine Payment（机器支付）
+- [ ] Settlement & Escrow（结算与托管）
+- [ ] Agent Identity（Agent 身份）
+- [ ] Agent Trust & Reputation（Agent 信任与声誉）
+- [ ] Verifiable AI（可验证 AI）
+- [ ] AI Security（AI 安全）
+- [ ] AI Privacy（AI 隐私）
+- [ ] Governance AI（治理 AI）
+- [ ] AI Sovereignty（AI 主权）
+- [ ] Decentralized AI（去中心化 AI）
+- [ ] AI Oracle（AI 预言机）
 
-### Tracks (Exploration)
-- [ ] Agentic Commerce
-- [ ] Wallet / Permission
-- [ ] AI Security
-- [ ] Governance
-- [ ] Dev Tooling
-- [ ] Open Track
+### 前沿探索
+- [ ] Agentic Commerce（智能体商业）
+- [ ] Wallet / Permission（钱包与权限）
+- [ ] AI Security（AI 安全赛道）
+- [ ] Governance（治理）
+- [ ] Dev Tooling（开发工具）
+- [ ] Open Track（开放赛道）

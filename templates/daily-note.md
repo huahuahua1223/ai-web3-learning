@@ -1,17 +1,17 @@
-# {{date}} Learning Log
+# {{date}} 学习日志
 
-## Today's Goals
+## 今日目标
 - [ ] 
 
-## What I Learned
-### Reading / Watching
+## 学习内容
+### 阅读 / 观看
 
 
-### Experiments / Code
+### 实验 / 代码
 
 
-## Questions & Insights
+## 问题与收获
 
 
-## Tomorrow's Plan
+## 明日计划
 

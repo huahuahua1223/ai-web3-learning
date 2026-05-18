@@ -1,30 +1,30 @@
-# Handbook Feedback
+# Handbook 反馈
 
-This directory collects feedback, suggestions, and corrections for the [AI x Web3 School Handbook](https://aiweb3.school/zh/handbook/).
+本目录收集对 [AI x Web3 School Handbook](https://aiweb3.school/zh/handbook/) 的反馈、建议和勘误。
 
-## How to Write Feedback
+## 如何写反馈
 
-Create a file named `YYYY-MM-DD-topic.md` with the following structure:
+创建文件，命名格式为 `YYYY-MM-DD-主题.md`，内容结构如下：
 
 ```markdown
-# Feedback: [Brief Title]
+# 反馈：[简短标题]
 
-- Page: [Handbook page URL]
-- Type: Typo / Unclear Concept / Outdated Info / Structural Suggestion / Missing Content
-- Date: YYYY-MM-DD
+- 页面：[Handbook 页面链接]
+- 类型：错别字 / 概念不清 / 信息过期 / 结构建议 / 内容缺失
+- 日期：YYYY-MM-DD
 
-## Problem Description
-[What's wrong or could be improved]
+## 问题描述
+[具体哪里有问题或可以改进]
 
-## Suggested Fix
-[Your proposed change]
+## 建议改法
+[你的修改建议]
 
-## Context
-[How you encountered this — what you were trying to learn or do]
+## 上下文
+[你是在学什么、做什么时遇到这个问题的]
 ```
 
-## Purpose
+## 目的
 
-- Help improve the Handbook for future learners
-- Track your own learning gaps and confusion points
-- Contribute back to the open-source learning community
+- 帮助改进 Handbook，让后续学员更好地学习
+- 记录自己的学习卡点和困惑
+- 回馈开源学习社区

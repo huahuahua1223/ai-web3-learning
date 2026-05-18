@@ -1,11 +1,11 @@
 # {{task-name}}
 
-- Source: WCB Week ? / Handbook / Self-initiated
-- Status: In Progress / Done
-- Deadline: 
+- 来源：WCB Week ? / Handbook / 自发
+- 状态：进行中 / 已完成
+- 截止时间：
 
-## Work Log
+## 完成记录
 
 
-## Submission Link
+## 提交链接
 

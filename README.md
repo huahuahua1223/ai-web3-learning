@@ -1,44 +1,44 @@
 # AI x Web3 Learning
 
-Personal learning journal and proof-of-work for [AI x Web3 School](https://aiweb3.school/) Cohort 0.
+[AI x Web3 School](https://aiweb3.school/) Cohort 0 个人学习日志与任务证明。
 
-## About AI x Web3 School
+## 关于 AI x Web3 School
 
-AI x Web3 School is an open-source learning program for builders. The Handbook covers the real intersection of AI and Web3: model capabilities, Agent workflows, tool use, wallets, signatures, payments, identity, permissions, secure execution, governance, and verifiable records.
+AI x Web3 School 是面向 builders 的开源学习计划。Handbook 覆盖 AI 与 Web3 真正交叉时的核心问题：模型能力、Agent 工作流、工具调用、钱包、签名、支付、身份、权限、安全执行、治理协作和可验证记录。
 
-## Links
+## 链接
 
-- Handbook: https://aiweb3.school/zh/handbook/
-- WCB Course: https://web3career.build/zh/programs/AI-Web3-School
-- WCB Learning: https://web3career.build/zh/programs/AI-Web3-School#tab=learning
+- Handbook：https://aiweb3.school/zh/handbook/
+- WCB 课程页：https://web3career.build/zh/programs/AI-Web3-School
+- WCB Learning：https://web3career.build/zh/programs/AI-Web3-School#tab=learning
 
-## Privacy Notice
+## 隐私提醒
 
-This is a **public** repository. Do NOT commit any of the following:
+本仓库为 **公开仓库**，请勿提交以下内容：
 
-- API keys, tokens, or secrets
-- Private keys or seed phrases
-- `.env` files
-- Unpublished meeting links
-- Personal data of others
+- API Key、Token、Secret
+- 私钥或助记词
+- `.env` 文件
+- 未公开的会议链接
+- 他人个人数据
 
-## Repository Structure
+## 目录结构
 
 ```
-README.md                  # This file
-profile.md                 # Learner profile
-learning-plan.md           # Personal learning plan
-daily/                     # Daily learning notes & check-in drafts
-tasks/                     # Task records & proof-of-work
-experiments/               # Code experiments & prototypes
-handbook-feedback/         # Handbook feedback & suggestions
-hackathon/                 # Hackathon preparation & project ideas
-submissions/               # Task submission records
-templates/                 # Note templates
-  daily-note.md            # Daily note template
-  task-note.md             # Task note template
+README.md                  # 本文件
+profile.md                 # 学员画像
+learning-plan.md           # 个人学习计划
+daily/                     # 每日学习笔记与打卡草稿
+tasks/                     # 任务记录与完成证明
+experiments/               # 代码实验与原型
+handbook-feedback/         # Handbook 反馈与建议
+hackathon/                 # Hackathon 准备与项目构思
+submissions/               # 任务提交记录
+templates/                 # 笔记模板
+  daily-note.md            # 每日笔记模板
+  task-note.md             # 任务笔记模板
 ```
 
-## Initialized by
+## 初始化说明
 
-This repo was initialized with the help of an AI Learning Agent (Claude Code), following the [Learning Agent startup prompt](https://aiweb3.school/learning-agent.zh.txt). All file creation, commit, and push operations were confirmed manually.
+本仓库由 AI Learning Agent（Claude Code）辅助初始化，遵循 [Learning Agent 启动 Prompt](https://aiweb3.school/learning-agent.zh.txt)。所有文件创建、commit 和 push 操作均经人工确认。
