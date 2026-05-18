@@ -10,7 +10,7 @@
 ### AI 方向
 - [ ] 整理 AI 基础概念（LLM、Prompt、Context、RAG、Agent）
 - [x] 完成 Learning Agent 配置 → [tasks/week1-learning-agent-setup.md](tasks/week1-learning-agent-setup.md)
-- [ ] 完成一个 AI 可交互 Agent
+- [x] 完成一个 AI 可交互 Agent → [tasks/week1-ai-interactive-artifact.md](tasks/week1-ai-interactive-artifact.md)（合约可读化助手）
 
 ### Web3 方向
 - [ ] 完成一笔测试网交易
