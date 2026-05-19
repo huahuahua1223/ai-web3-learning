@@ -18,10 +18,17 @@
 
 ### 综合任务
 - [x] 画出 Agent-Wallet-Contract 架构图 → [experiments/agent-wallet-workflow.md](experiments/agent-wallet-workflow.md)
-- [ ] 提交所有 Week 1 任务证明
+- [x] 提交 Week 1 PoW Pack → [README.md#week-1-proof-of-work-pack](README.md#week-1-proof-of-work-pack)
 
 ### 综合进阶
-- [ ] 设计一个受限 Web3 助手或小 workflow
+- [ ] 设计一个受限 Web3 助手或小 workflow → 计划 5/19 → [experiments/restricted-web3-assistant-design.md](experiments/restricted-web3-assistant-design.md)
+- [ ] 拆解 1-2 个 AI × Web3 项目或 Builder → 计划 5/19 → [experiments/agent-project-analysis.md](experiments/agent-project-analysis.md)
+
+### Week 1 收尾排程
+- [ ] 5/19 周二：完成两个综合进阶任务（④ 受限助手设计 + ⑤ 项目拆解）
+- [ ] 5/20-21 周三周四：看 5/19 Hermes 直播回放 + 阅读 Handbook AI > Agent / Prompt / MCP
+- [ ] 5/22 周六：观看 Week 1 Review Meeting 直播 + 发布 Week 1 学习总结（X / 博客，tag @aiweb3school @LXDAO_Official @ETHPanda_Org @web3careerbuild @Zai_org）
+- [ ] 5/23-24 周日周一：补 Hackathon 方向调研 + 整周回顾 + 把剩余直播回放看完
 
 ---
 
