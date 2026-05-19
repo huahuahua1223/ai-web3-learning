@@ -1,0 +1,8 @@
+.DS_Store
+
+# WCB API 拉下来的英文原文缓存，供人工 diff 检查，不进 git
+curriculum/.cache/
+
+# 备份文件
+*.bak
+*.bak.*

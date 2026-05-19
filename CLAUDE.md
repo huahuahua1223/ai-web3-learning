@@ -23,9 +23,11 @@ AI x Web3 School Cohort 0 个人学习仓库。用于学习日志、任务证明
 - `daily/YYYY-MM-DD.md` — 每日学习笔记，模板见 `templates/daily-note.md`
 - `tasks/` — 任务记录，模板见 `templates/task-note.md`
 - `experiments/` — 代码实验与原型
+- `curriculum/weekN.md` — WCB 平台课程大纲本地化（同步自 API，含中文摘要 + 资源清单 + 进度映射）
 - `handbook-feedback/YYYY-MM-DD-主题.md` — Handbook 反馈，格式见 `handbook-feedback/README.md`
 - `hackathon/` — Hackathon 项目准备
 - `submissions/` — 任务提交记录
+- `scripts/` — 自动化助手脚本（`wcb-checkin-prep.sh` 拉打卡原料 / `wcb-curriculum-sync.sh` 拉课程大纲）
 - `learning-plan.md` — 学习计划与 Handbook 阅读进度追踪
 
 ## 工作规范
@@ -86,16 +88,40 @@ AI x Web3 School Cohort 0 个人学习仓库。用于学习日志、任务证明
 
 | procedure | 类型 | 用途 |
 |---|---|---|
-| `users.getProfile` | query | 验证 key + 取自己基本信息 |
-| `program.getById {idOrSlug:"AI-Web3-School"}` | query | 从返回的 `metadata.taskI18n.en` 拿全部 38 个 taskId |
-| `tasks.myTaskHistory {taskId}` | query | 查某 task 提交记录（有提交则 result 非空数组）|
+| `users.getProfile` | query | 验证 key + 取自己基本信息（含报名的 ICL programs）|
+| `users.getMyPermissions` | query | 看自己有哪些权限 |
+| `program.getById {idOrSlug:"AI-Web3-School"}` | query | 从返回的 `metadata` 拿到：① `taskI18n.en` 全部 38 个 taskId ② `curriculumWeekI18n.en` 每周课程大纲（已封装为 `scripts/wcb-curriculum-sync.sh`）③ `announcementI18n` 公告 |
+| `tasks.myTaskHistory {taskId}` | query | 查某 task 提交记录（有提交则 result 非空数组）。`proof` 字段可能是字符串或 JSON（`{text, attachments[]}`）|
 | `tasks.myTotalPoints` | query | 自己已得总分 |
 | `tasks.submitEvidence {taskId, proof}` | **mutation** | 提交任务证明，**写入前必须展示 proof 全文 + 二次确认** |
+| `events.listForLearner {programId, rangeStart, rangeEnd}` | query | 列出某 program 在时间窗内的会议 |
 
 已知坑：
 - `tasks.listForLearner` 不传 `trackId` 返回 `result: []`；`tracks.listForProgram` 对 agent 关闭（FORBIDDEN）。绕路：先 `program.getById` 拿全部 taskId，再循环 `tasks.myTaskHistory`。
 - Claude Code 的 Bash 工具开新 shell 不会 source `~/.zshrc`，所以即使 `.zshrc` 里 `export` 了 key 也读不到。**统一从 keychain 现取**。
 - `proof` 字段实际接受字符串（URL 或长 Markdown）。提交综合任务时 proof 可放 GitHub README 链接或 raw markdown URL。
+
+## 课程大纲同步 SOP
+
+WCB 平台的 Week N 课程大纲（含周目标、推荐学习资源 link、本周交付物、进阶赛道）存在 `program.getById` 返回的 `metadata.curriculumWeekI18n.en` 字段里。每开放新一周时同步一次。
+
+跑：
+
+```bash
+bash scripts/wcb-curriculum-sync.sh
+```
+
+行为（安全优先，绝不覆盖人工编辑过的文件）：
+- `curriculum/weekN.md` **不存在** → 创建骨架（含英文原文折叠 + 中文摘要/资源清单/进度映射的占位）
+- `curriculum/weekN.md` **已存在** → 跳过，但把最新英文原文 dump 到 `curriculum/.cache/weekN.en.md`（.gitignore 已排除）供人工 diff 检查
+
+骨架文件创建后必须人工补全：中文摘要、按模块分组的可勾选资源清单、自己的 PoW ↔ 平台任务进度映射表——参考 [curriculum/week1.md](curriculum/week1.md) 模板。
+
+如怀疑 WCB 原文有更新：
+
+```bash
+diff <(sed -n '/<details>/,/<\/details>/p' curriculum/weekN.md) curriculum/.cache/weekN.en.md
+```
 
 ## 残酷共学笔记格式约束
 
