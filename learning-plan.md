@@ -1,5 +1,12 @@
 # 学习计划
 
+## 课程大纲（来自 WCB API）
+
+- [Week 1 大纲 + 推荐资源清单](curriculum/week1.md)（同步自 WCB · 2026-05-19）
+- Week 2-4 大纲尚未在 API 中暴露，开课后用 `bash scripts/wcb-checkin-prep.sh` 顺便拉一份
+
+---
+
 ## Week 1 任务清单（来自 WCB）
 
 ### 前置准备
