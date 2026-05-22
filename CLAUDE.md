@@ -106,16 +106,16 @@ AI x Web3 School Cohort 0 个人学习仓库。用于学习日志、任务证明
 |---|---|---|
 | `users.getProfile` | query | 验证 key + 取自己基本信息（含报名的 ICL programs）|
 | `users.getMyPermissions` | query | 看自己有哪些权限 |
-| `program.getById {idOrSlug:"AI-Web3-School"}` | query | 从返回的 `metadata` 拿到：① `taskI18n.en` 全部 38 个 taskId ② `curriculumWeekI18n.en` 每周课程大纲（已封装为 `scripts/wcb-curriculum-sync.sh`）③ `announcementI18n` 公告 |
-| `tasks.myTaskHistory {taskId}` | query | 查某 task 提交记录（有提交则 result 非空数组）。`proof` 字段可能是字符串或 JSON（`{text, attachments[]}`）|
-| `tasks.myTotalPoints` | query | 自己已得总分 |
+| `program.getById {idOrSlug:"AI-Web3-School"}` | query | 从返回的 `metadata` 拿到：① `taskI18n.en` 全部 taskId（2026-05-22 已 43 个，含 Week 1-4）② `curriculumWeekI18n.en` 每周课程大纲（已封装为 `scripts/wcb-curriculum-sync.sh`）③ `announcementI18n` 公告 |
+| `tasks.myTaskHistory {taskId}` | query | 查某 task 提交记录（有提交则 result 非空数组）。`proof` 字段可能是字符串或 JSON（`{text, attachments[]}`），2026-05-22 实测提交综合任务时返回的 `proof` 类型 = `string` |
+| `tasks.myTotalPoints` | ⚠️ FORBIDDEN | 对 agent 已关闭（2026-05-22 实测）。查总分走网页 UI 或者 `program.getById` 拿 task points 累加 |
 | `tasks.submitEvidence {taskId, proof}` | **mutation** | 提交任务证明，**写入前必须展示 proof 全文 + 二次确认** |
 | `events.listForLearner {programId, rangeStart, rangeEnd}` | query | 列出某 program 在时间窗内的会议 |
 
 已知坑：
-- `tasks.listForLearner` 不传 `trackId` 返回 `result: []`；`tracks.listForProgram` 对 agent 关闭（FORBIDDEN）。绕路：先 `program.getById` 拿全部 taskId，再循环 `tasks.myTaskHistory`。
+- `tasks.listForLearner` 不传 `trackId` 返回 `result: []`；`tracks.listForProgram` 和 `tasks.myTotalPoints` 都对 agent 关闭（FORBIDDEN，2026-05-22 实测）。绕路：先 `program.getById` 拿全部 taskId，再循环 `tasks.myTaskHistory`；总分目前没有 agent 入口，需走网页 UI。
 - Claude Code 的 Bash 工具开新 shell 不会 source `~/.zshrc`，所以即使 `.zshrc` 里 `export` 了 key 也读不到。**统一从 keychain 现取**。
-- `proof` 字段实际接受字符串（URL 或长 Markdown）。提交综合任务时 proof 可放 GitHub README 链接或 raw markdown URL。
+- `proof` 字段实际接受字符串（URL 或长 Markdown，2026-05-22 用多行 markdown 字符串 + 多个 URL 实测通过，submission ID `cmpgyf1uf9yzgmu0174gzog1r`）。提交综合任务时 proof 可放 GitHub README 链接、X URL、raw markdown URL，或自定义 markdown 串多个 PoW 链接。
 
 ## 课程大纲同步 SOP
 
