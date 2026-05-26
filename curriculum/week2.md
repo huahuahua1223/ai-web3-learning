@@ -139,7 +139,7 @@ WCB 平台 Week 2 共约 25 个 task（含 9 场直播 + 对应回放 / Co-learn
 | Online Session · 5.25 Co-learning Live | ✅ SUBMITTED | 5/25 22:02 提交，proof 「已参加」+ 截图 |
 | Online Session · 5.25 Long-term Memory for AI Agents 直播 | ✅ SUBMITTED | 5/25 22:38 提交，proof 「已参加」+ 截图 |
 | Online Session · 5.25 Long-term Memory for AI Agents 回放 | ⏸ 直播已签到，回放任务可选不补 | - |
-| Online Session · **5.26 Cobo Agentic Wallet PM 直播 / 回放 / 上麦** | ⏸ 5/26 20:00 必参加 | Module B/D 直接对口 |
+| Online Session · **5.26 Cobo Agentic Wallet PM 直播 / 回放 / 上麦** | ✅ 直播 `SUBMITTED` | 5/26 21:22 提交直播签到；回放 / 上麦未做，Module B/D 直接对口 |
 | Online Session · 5.27 Co-learning Live | ⏸ | - |
 | Online Session · 5.27 Neo-Cypherpunk Privacy 直播 / 回放 | ⏸ | Module F 直接对口 |
 | Online Session · 5.28 Co-learning Live | ⏸ | - |
