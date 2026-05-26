@@ -115,7 +115,7 @@ WCB 给的提示三选其一：「Agent 是否可以发起支付 / 哪些动作�
 
 ### AI 向
 
-- ✅ **Learning Agent 配置**（Claude Code + 仓库级 `CLAUDE.md` 上下文）→ [tasks/week1-learning-agent-setup.md](https://github.com/huahuahua1223/ai-web3-learning/blob/main/tasks/week1-learning-agent-setup.md)
+- ✅ **Learning Agent 配置**（Claude Code + 仓库级 `AGENTS.md` 权威上下文，`CLAUDE.md` 为兼容入口）→ [tasks/week1-learning-agent-setup.md](https://github.com/huahuahua1223/ai-web3-learning/blob/main/tasks/week1-learning-agent-setup.md)
 - ✅ **合约可读化助手 Demo**（接入 Anthropic / OpenAI / 国内中转三种 LLM）→ [week1-contract-reader.vercel.app](https://week1-contract-reader.vercel.app/) · [GitHub repo](https://github.com/huahuahua1223/week1-contract-reader)
 - ✅ **WCB Agent API 探索 + 两个自动化脚本**
   - [`scripts/wcb-checkin-prep.sh`](https://github.com/huahuahua1223/ai-web3-learning/blob/main/scripts/wcb-checkin-prep.sh)：自动拼一份打卡原料喂给 Claude 起稿

@@ -76,7 +76,7 @@ MetaMask 弹窗显示同样的 calldata / 目标 / 金额 → 用户点 Confirm 
    **缓解**：永远通过 Etherscan getsourcecode 拉**最新**源码，不依赖 LLM 内存里的 ABI。
 
 4. **Key 泄漏** — Key 进 `.env`、prompt、log 都可能泄。
-   **缓解**：keychain / 钱包原生签名；Agent 不接触私钥；CLAUDE.md 已编入「不写 Key 到任何文件」规则。
+   **缓解**：keychain / 钱包原生签名；Agent 不接触私钥；AGENTS.md 已编入「不写 Key 到任何文件」规则。
 
 5. **疲劳点确认** — 多次签名后用户变成肌肉反射，6 类风险检查被跳过。
    **缓解**：钱包 UI 高亮关键参数；大额延时；定期统计「今日已签 N 次，平均确认时间 X 秒」让用户自审。

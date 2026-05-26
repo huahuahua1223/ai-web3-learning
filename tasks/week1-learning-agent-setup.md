@@ -17,7 +17,7 @@
 - **终端原生集成**：直接在 macOS 终端运行，无需切换到独立 IDE 或浏览器
 - **完整文件操作能力**：内置 Read / Edit / Write 工具，无需复制粘贴代码
 - **内置 git 与 gh CLI 工具链调用**：可以引导仓库创建、commit、push 等流程
-- **支持仓库级上下文**：通过 `CLAUDE.md` 可以让后续会话自动加载学员画像、目录约定和工作规范
+- **支持仓库级上下文**：通过 `AGENTS.md` 可以让后续会话自动加载学员画像、目录约定和工作规范
 - **明确的安全边界**：默认对 push、写 secret 等敏感操作要求人工确认，与启动 Prompt 的「人工确认」原则天然契合
 
 ---
@@ -46,7 +46,7 @@
    - `README.md`：学校简介、关键链接、隐私提醒、目录说明
    - `profile.md`：学员画像
    - `learning-plan.md`：Week 1 任务清单 + 4 阶段个性化路径 + Handbook 阅读追踪
-   - `CLAUDE.md`：仓库级 Agent 项目上下文
+   - `AGENTS.md`：仓库级 Agent 项目上下文（`CLAUDE.md` 为兼容入口）
    - `templates/daily-note.md` / `templates/task-note.md`：笔记模板
    - `handbook-feedback/README.md`：Handbook 反馈格式指引
    - `daily/2026-05-18.md`：今日打卡草稿
@@ -79,12 +79,12 @@
 
 启动方式：把启动 Prompt 链接 + Handbook 链接 + 一句话指令发送给 Claude Code，Agent 即按照 Prompt 中的 8 步流程（确认画像 / 引导 gh / 创建 repo / 初始化结构 / 每日打卡 / Handbook feedback / WCB API / 最终输出）执行。
 
-### 3.2 仓库级 Agent 上下文：`CLAUDE.md`
+### 3.2 仓库级 Agent 上下文：`AGENTS.md`
 
-放在仓库根目录的 `CLAUDE.md` 让任何后续 Claude Code 会话在该目录下启动时自动加载，无需重复说明画像与约定。完整内容：
+放在仓库根目录的 `AGENTS.md` 是当前的权威 Agent 上下文文件；为兼容旧入口，同目录 `CLAUDE.md` 仅保留跳转壳。Week 1 初始化时的基础版本如下：
 
 ```markdown
-# CLAUDE.md
+# AGENTS.md
 
 ## 项目概述
 AI x Web3 School Cohort 0 个人学习仓库。用于学习日志、任务证明、代码实验、Handbook 反馈和 Hackathon 准备。
