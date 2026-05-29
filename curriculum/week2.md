@@ -140,7 +140,7 @@ Module A 已完成本地产物，下一步直接围绕这条主线继续补 Modu
 | Week 2 Weekly Review Sharing · 5.29 Live Reflection or Hackathon Idea (+5) | ⏸ 待 5/29-30 | 跟 5.29 Week 2 例会 / Hackathon 方向反思捆绑 |
 | Module A · 方向研究｜AI × Web3 问题地图与主方向选择 (+20) | 📝 本地产物已完成，待 WCB 提交 | [tasks/week2-problem-map-main-direction.md](../tasks/week2-problem-map-main-direction.md) |
 | Module B · Payment / Commerce 最小流程拆解 (+20) | 📝 本地产物已完成，待 WCB 提交 | [payment-commerce-flow.md](../experiments/payment-commerce-flow.md) Contract Interaction Prep Agent paid prep service |
-| Module B · **进阶**｜x402 Paywall + CAW Agent 自主支付闭环 (+40) | ⏸ Hackathon 方向收敛后再决定 | - |
+| Module B · **进阶**｜x402 Paywall + CAW Agent 自主支付闭环 (+40) | 📝 本地产物已完成，待 WCB 提交 | [x402-caw-payment-loop.md](../experiments/x402-caw-payment-loop.md) 设计型交付：架构图 + 时序图 + pact + 接口 + 风险边界 |
 | Module C · Agent Identity Profile 与能力声明草图 (+20) | 📝 本地产物已完成，待 WCB 提交 | [agent-profile-capability-sketch.md](../experiments/agent-profile-capability-sketch.md) Contract Interaction Prep Agent |
 | Module D · Wallet / Permission 权限策略 (+20) | 📝 本地产物已完成，待 WCB 提交 | [restricted-web3-assistant-design.md](../experiments/restricted-web3-assistant-design.md) 正式版：task-level authorization / budget / expiry / revoke / audit |
 | Module F · Security / Privacy · Agent Workflow Threat Model (+20) | 📝 本地产物已完成，待 WCB 提交 | [agent-workflow-threat-model.md](../experiments/agent-workflow-threat-model.md) 正式版：assets / permissions / data / tool calls / dependencies / failure consequences |
