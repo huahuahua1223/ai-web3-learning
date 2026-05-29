@@ -145,7 +145,7 @@ Module A 已完成本地产物，下一步直接围绕这条主线继续补 Modu
 | Module D · Wallet / Permission 权限策略 (+20) | 📝 本地产物已完成，待 WCB 提交 | [restricted-web3-assistant-design.md](../experiments/restricted-web3-assistant-design.md) 正式版：task-level authorization / budget / expiry / revoke / audit |
 | Module F · Security / Privacy · Agent Workflow Threat Model (+20) | 📝 本地产物已完成，待 WCB 提交 | [agent-workflow-threat-model.md](../experiments/agent-workflow-threat-model.md) 正式版：assets / permissions / data / tool calls / dependencies / failure consequences |
 | Module G · Governance / Coordination 流程草图 (+20) | 📝 本地产物已完成，待 WCB 提交 | [governance-coordination-workflow.md](../experiments/governance-coordination-workflow.md) meeting-to-action workflow + budget execution checklist |
-| **本周综合交付**｜方向深挖包 + Proposal 初稿 (+40) | ⏸ 5/26-5/29 收敛 + 5/29 起草 | - |
+| **本周综合交付**｜方向深挖包 + Proposal 初稿 (+40) | 📝 本地产物已完成，待 WCB 提交 | [submissions/week2-direction-deep-dive-proposal.md](../submissions/week2-direction-deep-dive-proposal.md) |
 | Online Session · 5.27 Neo-Cypherpunk Privacy 直播 (+20) | ✅ `SUBMITTED` | 2026-05-27 23:35 提交，Module F 直接对口 |
 | Online Session · 5.27 Neo-Cypherpunk Privacy 回放 (+10) | ⏸ | - |
 | Online Session · 5.29 Women Builders in AI × Web3 直播 (+20) | ⏸ | - |
