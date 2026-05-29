@@ -143,7 +143,7 @@ Module A 已完成本地产物，下一步直接围绕这条主线继续补 Modu
 | Module B · **进阶**｜x402 Paywall + CAW Agent 自主支付闭环 (+40) | ⏸ Hackathon 方向收敛后再决定 | - |
 | Module C · Agent Identity Profile 与能力声明草图 (+20) | ⏸ | - |
 | Module D · Wallet / Permission 权限策略 (+20) | 📝 本地产物已完成，待 WCB 提交 | [restricted-web3-assistant-design.md](../experiments/restricted-web3-assistant-design.md) 正式版：task-level authorization / budget / expiry / revoke / audit |
-| Module F · Security / Privacy · Agent Workflow Threat Model (+20) | ⏸ | [restricted-web3-assistant-design.md](../experiments/restricted-web3-assistant-design.md) 风险段可做扩展基础 |
+| Module F · Security / Privacy · Agent Workflow Threat Model (+20) | 📝 本地产物已完成，待 WCB 提交 | [agent-workflow-threat-model.md](../experiments/agent-workflow-threat-model.md) 正式版：assets / permissions / data / tool calls / dependencies / failure consequences |
 | Module G · Governance / Coordination 流程草图 (+20) | ⏸ | - |
 | **本周综合交付**｜方向深挖包 + Proposal 初稿 (+40) | ⏸ 5/26-5/29 收敛 + 5/29 起草 | - |
 | Online Session · 5.27 Neo-Cypherpunk Privacy 直播 (+20) | ✅ `SUBMITTED` | 2026-05-27 23:35 提交，Module F 直接对口 |
