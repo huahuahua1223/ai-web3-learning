@@ -124,7 +124,7 @@ Module A 已完成本地产物，下一步直接围绕这条主线继续补 Modu
 
 ## 我在本周的对应进度
 
-按 2026-05-29 提权运行 `bash scripts/wcb-checkin-prep.sh` 的 Agent API 结果核对：WCB 当前共 **67** 个 task，累计 **35 / 67** 已提交。结合 task title 与本地 `daily/` 记录，Week 2 已确认提交 **6 项**；其中 1 项（5.26 Cobo 直播）在本次 API 返回里 title 为空，但时间戳与 [daily/2026-05-26.md](../daily/2026-05-26.md) 的签到记录一致，因此按该任务回填。
+按 2026-05-29 提权运行 `bash scripts/wcb-checkin-prep.sh` 的 Agent API 结果核对：WCB 当前共 **67** 个 task，累计 **46 / 67** 已提交。结合 task title 与本地 `daily/` 记录，Week 2 目前已确认提交 **17 项**；其中 1 项（5.26 Cobo 直播）在 API 返回里 title 为空，但时间戳与 [daily/2026-05-26.md](../daily/2026-05-26.md) 的签到记录一致，因此按该任务回填。
 
 **已确认已提交**
 
@@ -137,20 +137,20 @@ Module A 已完成本地产物，下一步直接围绕这条主线继续补 Modu
 
 | 平台任务 | 状态 | 我的 PoW |
 |---|---|---|
-| Week 2 Weekly Review Sharing · 5.29 Live Reflection or Hackathon Idea (+5) | ⏸ 待 5/29-30 | 跟 5.29 Week 2 例会 / Hackathon 方向反思捆绑 |
-| Module A · 方向研究｜AI × Web3 问题地图与主方向选择 (+20) | 📝 本地产物已完成，待 WCB 提交 | [tasks/week2-problem-map-main-direction.md](../tasks/week2-problem-map-main-direction.md) |
-| Module B · Payment / Commerce 最小流程拆解 (+20) | 📝 本地产物已完成，待 WCB 提交 | [payment-commerce-flow.md](../experiments/payment-commerce-flow.md) Contract Interaction Prep Agent paid prep service |
-| Module B · **进阶**｜x402 Paywall + CAW Agent 自主支付闭环 (+40) | 📝 本地产物已完成，待 WCB 提交 | [x402-caw-payment-loop.md](../experiments/x402-caw-payment-loop.md) 设计型交付：架构图 + 时序图 + pact + 接口 + 风险边界 |
-| Module C · Agent Identity Profile 与能力声明草图 (+20) | 📝 本地产物已完成，待 WCB 提交 | [agent-profile-capability-sketch.md](../experiments/agent-profile-capability-sketch.md) Contract Interaction Prep Agent |
-| Module D · Wallet / Permission 权限策略 (+20) | 📝 本地产物已完成，待 WCB 提交 | [restricted-web3-assistant-design.md](../experiments/restricted-web3-assistant-design.md) 正式版：task-level authorization / budget / expiry / revoke / audit |
-| Module F · Security / Privacy · Agent Workflow Threat Model (+20) | 📝 本地产物已完成，待 WCB 提交 | [agent-workflow-threat-model.md](../experiments/agent-workflow-threat-model.md) 正式版：assets / permissions / data / tool calls / dependencies / failure consequences |
-| Module G · Governance / Coordination 流程草图 (+20) | 📝 本地产物已完成，待 WCB 提交 | [governance-coordination-workflow.md](../experiments/governance-coordination-workflow.md) meeting-to-action workflow + budget execution checklist |
-| **本周综合交付**｜方向深挖包 + Proposal 初稿 (+40) | 📝 本地产物已完成，待 WCB 提交 | [submissions/week2-direction-deep-dive-proposal.md](../submissions/week2-direction-deep-dive-proposal.md) |
+| Week 2 Weekly Review Sharing · 5.29 Live Reflection or Hackathon Idea (+5) | ✅ `SUBMITTED` | 2026-05-29 20:39 提交，主题围绕 x402、权限、预算与 AgentPay Guard |
+| Module A · 方向研究｜AI × Web3 问题地图与主方向选择 (+20) | ✅ `SUBMITTED` | [tasks/week2-problem-map-main-direction.md](../tasks/week2-problem-map-main-direction.md) |
+| Module B · Payment / Commerce 最小流程拆解 (+20) | ✅ `SUBMITTED` | [payment-commerce-flow.md](../experiments/payment-commerce-flow.md) |
+| Module B · **进阶**｜x402 Paywall + CAW Agent 自主支付闭环 (+40) | ✅ `SUBMITTED` | [x402-caw-payment-loop.md](../experiments/x402-caw-payment-loop.md) |
+| Module C · Agent Identity Profile 与能力声明草图 (+20) | ✅ `SUBMITTED` | [agent-profile-capability-sketch.md](../experiments/agent-profile-capability-sketch.md) |
+| Module D · Wallet / Permission 权限策略 (+20) | ✅ `SUBMITTED` | [restricted-web3-assistant-design.md](../experiments/restricted-web3-assistant-design.md) |
+| Module F · Security / Privacy · Agent Workflow Threat Model (+20) | ✅ `SUBMITTED` | [agent-workflow-threat-model.md](../experiments/agent-workflow-threat-model.md) |
+| Module G · Governance / Coordination 流程草图 (+20) | ✅ `SUBMITTED` | [governance-coordination-workflow.md](../experiments/governance-coordination-workflow.md) |
+| **本周综合交付**｜方向深挖包 + Proposal 初稿 (+40) | ✅ `SUBMITTED` | [submissions/week2-direction-deep-dive-proposal.md](../submissions/week2-direction-deep-dive-proposal.md) |
 | Online Session · 5.27 Neo-Cypherpunk Privacy 直播 (+20) | ✅ `SUBMITTED` | 2026-05-27 23:35 提交，Module F 直接对口 |
 | Online Session · 5.27 Neo-Cypherpunk Privacy 回放 (+10) | ⏸ | - |
-| Online Session · 5.29 Women Builders in AI × Web3 直播 (+20) | ⏸ | - |
+| Online Session · 5.29 Women Builders in AI × Web3 直播 (+20) | ✅ `SUBMITTED` | 2026-05-29 19:39 提交 |
 | Online Session · 5.29 Women Builders in AI × Web3 回放 (+10) | ⏸ | - |
-| Online Session · 5.29 Week 2 例会直播 (+20) | ⏸ 5/29 20:00 | 含下周预告 |
+| Online Session · 5.29 Week 2 例会直播 (+20) | ✅ `SUBMITTED` | 2026-05-29 20:35 提交，含下周预告 |
 | Online Session · 5.29 Week 2 例会回放 (+10) | ⏸ | - |
 | Online Session · 5.28 Co-learning Live (+20) | ✅ `SUBMITTED` | 2026-05-28 23:25 提交 |
 | Week 2 自组织分享｜办一场你的 Twitter Space / Workshop (+20) | ⏸ | - |
