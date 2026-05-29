@@ -142,7 +142,7 @@ Module A 已完成本地产物，下一步直接围绕这条主线继续补 Modu
 | Module B · Payment / Commerce 最小流程拆解 (+20) | ⏸ | - |
 | Module B · **进阶**｜x402 Paywall + CAW Agent 自主支付闭环 (+40) | ⏸ Hackathon 方向收敛后再决定 | - |
 | Module C · Agent Identity Profile 与能力声明草图 (+20) | ⏸ | - |
-| Module D · Wallet / Permission 权限策略 (+20) | ⏳ 部分覆盖 | Hermes 实装的 launchd 红线收获（[daily/2026-05-25.md](../daily/2026-05-25.md) 收获 4）+ [restricted-web3-assistant-design.md](../experiments/restricted-web3-assistant-design.md) 待修订 |
+| Module D · Wallet / Permission 权限策略 (+20) | 📝 本地产物已完成，待 WCB 提交 | [restricted-web3-assistant-design.md](../experiments/restricted-web3-assistant-design.md) 正式版：task-level authorization / budget / expiry / revoke / audit |
 | Module F · Security / Privacy · Agent Workflow Threat Model (+20) | ⏸ | [restricted-web3-assistant-design.md](../experiments/restricted-web3-assistant-design.md) 风险段可做扩展基础 |
 | Module G · Governance / Coordination 流程草图 (+20) | ⏸ | - |
 | **本周综合交付**｜方向深挖包 + Proposal 初稿 (+40) | ⏸ 5/26-5/29 收敛 + 5/29 起草 | - |
